@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
     boolean gameWin = false;
     int winner = -1;
     int[] gameState = {2, 2, 2, 2, 2, 2, 2, 2, 2};
-    int[][] winninState = {{0, 1, 2}, {0, 3, 6}, {0, 4, 8}, {1, 4, 7}, {2, 5, 8}, {3, 4, 5}, {2, 4, 5}, {6, 7, 8}};
+    int[][] winninState = {{0, 1, 2}, {0, 3, 6}, {0, 4, 8}, {1, 4, 7}, {2, 5, 8}, {3, 4, 5}, {2, 4, 6}, {6, 7, 8}};
     int activePlayer = 0;
     private Button resetButton;
 
@@ -81,8 +81,8 @@ public class MainActivity extends AppCompatActivity {
 
         resetButton = (Button) findViewById(R.id.resetButton);
         TextView winText = (TextView) findViewById(R.id.winTextLabel);
-        resetButton.setVisibility(View.INVISIBLE);
-        winText.setVisibility(View.INVISIBLE);
+        resetButton.setVisibility(View.GONE);
+        winText.setVisibility(View.GONE);
 
         GridLayout gridLayout = (GridLayout) findViewById(R.id.gridLayout);
         for(int i=0; i<gridLayout.getChildCount(); i++) {
