@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Tic-Tac-Toe</string>
     <string name="reset">RESET</string>
+    <string name="has_won">has win</string>
+    <string name="x_tag">X</string>
+    <string name="o_tag">O</string>
 </resources>

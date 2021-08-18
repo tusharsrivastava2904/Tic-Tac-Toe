@@ -10,12 +10,15 @@
         android:id="@+id/winTextLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_margin="5dp"
         android:textColor="@color/design_default_color_primary"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="gone"
         app:layout_constraintBottom_toTopOf="@+id/gridLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:visibility="gone"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
 
     <GridLayout
@@ -151,17 +154,17 @@
         android:id="@+id/resetButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="20dp"
+        android:onClick="reset"
+        android:text="@string/reset"
+        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/gridLayout"
-        android:layout_marginLeft="50dp"
-        android:layout_marginRight="50dp"
-        android:layout_marginTop="30dp"
-        android:text="@string/reset"
-        android:layout_marginBottom="20dp"
-        android:onClick="reset"
-        android:visibility="gone"/>
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
