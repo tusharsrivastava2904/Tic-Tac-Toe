@@ -59,9 +59,9 @@ public class MainActivity extends AppCompatActivity {
                     //getting winner name for message!
                     String winner = "";
                     if (active_player == 1) {
-                        winner = getString(R.string.x_tag);
-                    } else {
                         winner = getString(R.string.o_tag);
+                    } else {
+                        winner = getString(R.string.x_tag);
                     }
                     String message = winner + " " + getString(R.string.has_won);
 
